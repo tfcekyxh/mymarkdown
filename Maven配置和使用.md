@@ -317,9 +317,11 @@ under the License.
 
 ![10](https://s2.loli.net/2024/03/29/AjTEOIXgSLHmq2J.png)
 
-![11](C:\Users\六件套\Desktop\11.png)
+
 
 ## 恭喜你成功了
+
+![11](https://s2.loli.net/2024/03/29/cFvwtdLZPKb7gfT.png)
 
 maven除了能导入依赖，甚至可以将web项目打成war包方便，在有maven的电脑上通过war包部署你的maven项目。添加依赖只是其中maven的冰山一角。
 
