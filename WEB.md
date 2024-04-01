@@ -628,15 +628,29 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 >
 > 我们开发时，前后端一定是分离开发的。
 
-异步交互：搜索联想、注册页面的用户名已存在了
+[忘记怎么写了：https://www.w3school.com.cn/js/js_ajax_intro.asp](https://www.w3school.com.cn/js/js_ajax_intro.asp)
+
+[AXIOS异步框架的使用：https://www.axios-http.cn/](https://www.axios-http.cn/)
+
+异步交互案例：搜索联想、注册页面的用户名已存在了。
+
+一般看到的js源码全部压缩成一行，就意味着可以少传输字符。
+
+可以试着用axios的框架来验证用户名是否存在，与其用原生的ajax
 
 
 
+### JSON
 
+> JavaScript Object Notation。JavaScript对象表示。
+>
+> 和js对象非常相似
 
+fastjson可以将json转换Java对象
 
+### 福利
 
-
+postman
 
 
 

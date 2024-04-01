@@ -36,3 +36,8 @@ for(String u : urls){
 ......
 ```
 
+### Ajax案例（验证用户是否存在）
+
+onblur失去焦点事件
+
+style.display='';
