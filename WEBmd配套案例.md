@@ -41,3 +41,34 @@ for(String u : urls){
 onblur失去焦点事件
 
 style.display='';
+
+### AXIOS+JSON案例（查询所有）
+
+##### 查询所有
+
+页面加载之后再获取所有
+
+```javascript
+window.onload =function (){
+    axios({
+        method:"",
+        url:""
+    }).then(function (resp){
+        
+    });
+}
+```
+
+json数据有中文
+
+```java
+response.setContentTye("text/json;charset=utf-8");
+response.getWriter().write(jsonString);
+```
+
+innerHTML拼接字符串
+
+##### 新增品牌（异步操作）
+
+不需要用submit了，submit只能同步
+
