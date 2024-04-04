@@ -2,7 +2,7 @@
 > 系统是Ubuntu23版本
 > 如果你和我遇到同样问题，希望可以帮你解决。
 
-### 安装MySSQL
+### 安装`MySQL`
 
 ##### 安装MySQL
 
@@ -44,7 +44,6 @@ SELECT user,plugin FROM user;
 UPDATE user SET plugin = 'mysql_native_password' WHERE user = 'root';
 FLUSH privileges;
 SELECT user,plugin FROM user;
-
 ```
 
 做完准备工作后**修改密码**吧`ALTER user 'root'@'localhost' IDENTIFIED BY '你想要设置的密码'`。注意密码需要有数字、英文、字符同时满足，至少8位长度，英文字符大小写都要有。如果这个操作有问题（在修改密码前，**不妨试试清空密码**`UPDATE user SET authentication_string='' WHERE user='root';`，再修改）
@@ -74,7 +73,7 @@ SELECT user,plugin FROM user;
 
 
 
-### 安装SQL Server
+### 安装`SQL Server`
 
 > 现在SQL Server是支持Linux了，我们虽然没有ssms（sql server managagment stdio）这种GUI界面，
 >
@@ -96,3 +95,12 @@ SELECT user,plugin FROM user;
 
 **1.windows下**
 
+总体过程是，打开配置管理器（如果`SQL Server 2022 配置管理器`搜不到，试着搜索`SQL Server configuration manager`），要打开`TCP/IP`协议，然后重新启动`SQL Server`服务，然后去`DataGrip`配置，别忘了用`Windows credentials`验证方式。
+
+<img src="https://s2.loli.net/2024/04/04/T7WOkBXtiHU3a8n.png" alt="sqlserver _3_.png" style="zoom: 67%;" />
+
+<img src="https://s2.loli.net/2024/04/04/B8TcfOySj9X2gQ5.png" alt="sqlserver _1_.png" style="zoom: 67%;" />
+
+<img src="https://s2.loli.net/2024/04/04/evTY82csxzJy4NC.png" alt="sqlserver _4_.png" style="zoom:67%;" />
+
+<img src="https://s2.loli.net/2024/04/04/uhktI2jNwd69ACs.png" alt="sqlserver _2_.png" style="zoom:67%;" />
