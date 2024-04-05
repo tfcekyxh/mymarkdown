@@ -646,7 +646,45 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 >
 > 和js对象非常相似
 
-fastjson可以将json转换Java对象
+`fastjson`可以将json转换Java对象
+
+
+
+### Vue
+
+> 简化前端DOM
+>
+> idea配置`Vue`代码补全，可以下载`Vue.js`插件
+
+2：00
+
+3：09
+
+7：09
+
+
+
+0:50
+
+18：08
+
+
+
+### Element
+
+> 饿了么eleme出品的基于Vue的网站组建库
+>
+> 或者用bootstrap
+
+3：24
+
+
+
+1：20
+
+
+
+
 
 ### 福利
 
