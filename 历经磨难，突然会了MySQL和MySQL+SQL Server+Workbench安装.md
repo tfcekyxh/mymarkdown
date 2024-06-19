@@ -2,7 +2,7 @@
 > 系统是Ubuntu23版本
 > 如果你和我遇到同样问题，希望可以帮你解决。
 
-### 安装`MySQL`
+### Ubuntu安装`MySQL`
 
 ##### 安装MySQL
 
@@ -11,6 +11,7 @@
 sudo apt update
 sudo apt install mysql-server
 ```
+
 
 
 ##### 启动MySQL
@@ -60,6 +61,16 @@ SELECT user,plugin FROM user;
 
 
 
+### Windows安装`MySQL`
+
+> 我windows安装还蛮累的，每次都出现Plugin 'mysql_native_password' is not loaded
+>
+> 自从mysql8.0以后登录验证模式都变了，所以要改回以前的老样子mysql_native_password，但是很容易报上面的错
+
+下载很有门道，如果你每次都会遇到。
+
+
+
 ### 恭喜你安装完MySQL，`MySQL Workbench`安装很简单的。
 
 
@@ -73,11 +84,11 @@ SELECT user,plugin FROM user;
 
 
 
-### 安装`SQL Server`
+### windows安装`SQL Server`
 
 > 现在SQL Server是支持Linux了，我们虽然没有ssms（sql server managagment stdio）这种GUI界面，
 >
-> 但是jetbrain家你可以试试，同样好用。
+> 但是jetbrain家DataGrip你可以试试，同样好用。
 
 [Ubuntu安装SQL Server教程：https://learn.microsoft.com/zh-cn/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver16&tabs=ubuntu2004](https://learn.microsoft.com/zh-cn/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver16&tabs=ubuntu2004)
 
