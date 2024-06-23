@@ -1,3 +1,5 @@
+<hr>
+
 ### 会话技术案例（登陆记住我、注册验证码）
 
 ##### 登陆
@@ -18,6 +20,10 @@
 
 checkcode工具类自己找一下。
 
+
+
+<hr>
+
 ### filter案例（登陆验证）
 
 implements Filter
@@ -36,11 +42,25 @@ for(String u : urls){
 ......
 ```
 
+
+
+
+
+<hr>
+
 ### Ajax案例（验证用户是否存在）
 
 onblur失去焦点事件
 
 style.display='';
+
+
+
+
+
+
+
+<hr>
 
 ### AXIOS+JSON案例（查询所有）
 
@@ -72,13 +92,37 @@ innerHTML拼接字符串
 
 不需要用submit了，submit只能同步
 
+
+
+<hr>
+
 ### Vue案例（简化列表数据的查询和添加功能）
 
 _this提高作用域
 
 mouted（）执行异步查询
 
+
+
+
+
+
+
+
+
+<hr>
+
 ### Element案例（综合案例前的网页做好）
+
+
+
+
+
+
+
+
+
+<hr>
 
 ### 综合案例
 
@@ -124,15 +168,15 @@ public class BaseServlet extends HttpServlet{
 
 
 
-分页查询，有的时候我们用到面向对象创建PageBean，为了提升复用性可以采用泛型\<T>，（手写分页插件的代码）
+1.分页查询，有的时候我们用到面向对象创建PageBean，为了提升复用性可以采用泛型\<T>，（手写分页插件的代码）
 
 
 
-条件查询，三个关系用AND，动态sql，需要带分页。既有url的参数，也有请求体的参数。
+2.条件查询，三个关系用AND，动态sql，需要带分页。既有url的参数，也有请求体的参数。
 
 
 
-前端关于this和_this的优化，ES6提供了箭头函数`resp =>{}`会根据上下文自动找this
+3.前端关于this和_this的优化，ES6提供了箭头函数`resp =>{}`会根据上下文自动找this
 
 
 

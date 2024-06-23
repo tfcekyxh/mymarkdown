@@ -8,6 +8,12 @@
 
 如果你非要很掘的添加系统路径的方法的话，请使用`which java`让他返回路径，再一直使用`file [path]`，一直查找下去。直到最后显示出bin目录，其实可以提前结束了。
 
+
+
+
+
+<hr>
+
 ### JDBC
 
 > JDBC 需要对应的数据库驱动，我使用的是mysql，所以我需要mysql-connector-java.jar，
@@ -34,6 +40,14 @@ connection.close();
 ```
 
 
+
+
+
+
+
+
+
+<hr>
 
 ### Druid(DBCP、C3P0)
 
@@ -62,6 +76,12 @@ connection.close();
 
 
 
+
+
+
+
+<hr>
+
 ### Maven
 
 > 一定要自己安装配置一下maven
@@ -84,6 +104,10 @@ connection.close();
    ```
 
 
+
+
+
+<hr>
 
 ### MyBatis
 
@@ -206,6 +230,10 @@ connection.close();
 
 
 
+<hr>
+
+
+
 ### HTML
 
 
@@ -227,6 +255,14 @@ connection.close();
 
 
 
+
+
+
+
+
+
+<hr>
+
 ### CSS
 
 
@@ -234,6 +270,10 @@ connection.close();
 [你忘记了CSS属性有什么值，来看这里：https://www.w3school.com.cn/cssref/index.asp](https://www.w3school.com.cn/cssref/index.asp)
 
 
+
+
+
+<hr>
 
 ### JavaScript
 
@@ -328,6 +368,8 @@ connection.close();
 
    
 
+<hr>
+
 ### HTTP
 
 > 从此处开始后面都是Web核心技术
@@ -354,6 +396,8 @@ Cache-Control:max-age=300，给这个响应缓存300秒
 ```
 
 
+
+<hr>
 
 ### Tomcat
 
@@ -386,6 +430,14 @@ Cache-Control:max-age=300，给这个响应缓存300秒
    b）tomcat maven插件（名字就叫这个）
 
 
+
+
+
+
+
+
+
+<hr>
 
 ### Servlet
 
@@ -517,6 +569,10 @@ Cache-Control:max-age=300，给这个响应缓存300秒
 
 
 
+
+
+<hr>
+
 ### JSP
 
 > 本质就是一个Servlet
@@ -542,7 +598,12 @@ Cache-Control:max-age=300，给这个响应缓存300秒
    </c:forEach>
    ```
 
-   
+
+
+
+
+
+<hr>
 
 ### MVC和三层架构
 
@@ -568,6 +629,10 @@ Controller+View其实就是表现层。
 Model（JavaBean）就是业务逻辑层和数据访问层。
 
 
+
+
+
+<hr>
 
 ### 会话跟踪技术深入了解
 
@@ -600,6 +665,10 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 
 
 
+
+
+<hr>
+
 ### Filter
 
 > JavaWeb三大组件（`Servlet`、`Filter`、`Listener`）
@@ -612,6 +681,10 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 
 
 
+
+
+<hr>
+
 ### Listener
 
 可以对application、request、session的各个行为进行监听
@@ -619,6 +692,10 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 我们一般只用`ServletContextListener`
 
 
+
+
+
+<hr>
 
 ### AJAX
 
@@ -640,6 +717,10 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 
 
 
+
+
+<hr>
+
 ### JSON
 
 > JavaScript Object Notation。JavaScript对象表示。
@@ -650,37 +731,29 @@ Model（JavaBean）就是业务逻辑层和数据访问层。
 
 
 
+
+
+<hr>
+
 ### Vue
 
 > 简化前端DOM
 >
 > idea配置`Vue`代码补全，可以下载`Vue.js`插件
 
-2：00
-
-3：09
-
-7：09
 
 
 
-0:50
 
-18：08
+<hr>
 
-
-
-### Element
+### Element UI
 
 > 饿了么eleme出品的基于Vue的网站组建库
 >
 > 或者用bootstrap
 
-3：24
 
-
-
-1：20
 
 
 

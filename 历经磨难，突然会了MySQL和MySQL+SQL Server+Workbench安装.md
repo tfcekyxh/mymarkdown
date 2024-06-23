@@ -4,7 +4,7 @@
 
 ### Ubuntu安装`MySQL`
 
-##### 安装MySQL
+##### 1.安装MySQL
 
 可以官网下载zip包，自己解压配置。不过我觉得很麻烦，也没学会。大胆输入下面命令。
 ```shell
@@ -14,7 +14,7 @@ sudo apt install mysql-server
 
 
 
-##### 启动MySQL
+##### 2.启动MySQL
 
 一般安装过程安装完，会自动启动MySQL。我们需要启动MySQL才能修改密码。输入`sudo systemctl status mysql`，你肯定看得懂一点。
 
@@ -22,7 +22,7 @@ sudo apt install mysql-server
 
 
 
-##### 通过apt安装，MySQL并不会叫你设置用户和密码
+##### 3.通过apt安装，MySQL并不会叫你设置用户和密码
 
 所以需要重新设置一下密码，我这里参考了这个视频：[【04-Ubuntu20.04配置最新的Mysql8.0数据库-哔哩哔哩】 https://b23.tv/5JseuP4]( https://b23.tv/5JseuP4)
 
@@ -32,7 +32,7 @@ sudo apt install mysql-server
 
 
 
-##### 记住了账号和密码，我们登陆MySQL，有很多设置。
+##### 4.记住了账号和密码，我们登陆MySQL，有很多设置。
 
 在终端输入`mysql -u 刚刚看到的user内容 -p`，然后终端会要求你输入密码。你就输入`刚才看到的密码`
 
@@ -53,7 +53,7 @@ SELECT user,plugin FROM user;
 
 
 
-##### 退出这个默认账户，登陆我们以后经常用的root账户
+##### 4.退出这个默认账户，登陆我们以后经常用的root账户
 
 输入`exit`退出MySQL，然后输入`mysql -u root -p`，随后输入`你设置的密码`，这样就能登录root账户。
 
@@ -73,9 +73,9 @@ SELECT user,plugin FROM user;
 
 ### 恭喜你安装完MySQL，`MySQL Workbench`安装很简单的。
 
+我建议如果是建模的话，使用mysql workbench会好很多。
 
-
-##### 在官网下载workbench安装包
+**在官网下载workbench安装包**
 
 直达链接是`https://dev.mysql.com/downloads/workbench/`。
 不过直接在`app center`下载就好
@@ -86,7 +86,7 @@ SELECT user,plugin FROM user;
 
 ### windows安装`SQL Server`
 
-> 现在SQL Server是支持Linux了，我们虽然没有ssms（sql server managagment stdio）这种GUI界面，
+> 现在SQL Server是支持Linux了，我们在linux虽然没有ssms（sql server managagment stdio）这种GUI界面，
 >
 > 但是jetbrain家DataGrip你可以试试，同样好用。
 
@@ -94,7 +94,7 @@ SELECT user,plugin FROM user;
 
 
 
-#### 现在JetBrain制作的`DataGrip`已经足够好用了，可以配置主流数据库
+### 现在的`DataGrip`已经足够好用了，可以配置主流数据库
 
 ##### datagrip配置mysql
 

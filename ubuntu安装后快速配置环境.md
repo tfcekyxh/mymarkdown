@@ -21,4 +21,3 @@
 - [x] gcc（输入gcc，……）
 - [x] vim（输入vim，……）
 - [x] htop（输入htop）
-

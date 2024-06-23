@@ -1,5 +1,21 @@
 # ES6
 
+
+
+[TOC]
+
+
+
+
+
+
+
+
+
+
+
+
+
 > [ES6从入门到精通](https://www.bilibili.com/video/BV1Bh4y1q73A)
 
 ## 1.什么是ECMAScript？
