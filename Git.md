@@ -730,6 +730,55 @@ git rebase upstream/master
 git push origin master --force
 ```
 
+
+
+# 常见问题
+
+## push被Blocked了
+
+在我的有些java代码发现了AliYunOSS-key-id和secret，git会阻止我们push，此时只需要**点进去他给的连接**，一个个选择false postive假阳性就好了
+
+```shell
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: error: GH013: Repository rule violations found for refs/heads/master.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push  
+remote:     
+remote:     
+remote:       —— Alibaba Cloud AccessKey ID ————————————————————————
+remote:        locations:
+remote:          - commit: 741fc2eefe41fb290a25175e79dc5a0643e929fb
+remote:            path: 后端工具类合集.md:538
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/tfcekyxh/mymarkdown/security/secret-scanning/unblock-secret/2lKvHW2gpkuzYWvvE0b63e1QPS3  
+remote:     
+remote:     
+remote:       —— Alibaba Cloud AccessKey Secret ————————————————————
+remote:        locations:
+remote:          - commit: 741fc2eefe41fb290a25175e79dc5a0643e929fb
+remote:            path: 后端工具类合集.md:539
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/tfcekyxh/mymarkdown/security/secret-scanning/unblock-secret/2lKvHSMPLNa8M4di18i7fBEBpnj  
+remote:     
+remote: 
+remote: 
+To github.com:tfcekyxh/mymarkdown.git
+```
+
+
+
+
+
 ## 目录
 
 [TOC]
