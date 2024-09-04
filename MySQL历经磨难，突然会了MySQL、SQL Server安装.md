@@ -42,12 +42,12 @@ sudo apt install mysql-server
 
 USE mysql;
 SELECT user,plugin FROM user;
-UPDATE user SET plugin = 'mysql_native_password' WHERE user = 'root';
-FLUSH privileges;
+UPDATE user SET plugin = 'mysql_native_password' WHERE user = 'root';#或者 UPDATE user SET plugin = 'caching_2_password' WHERE user = 'root'
+FLUSH privileges;#这一句可能会报错，多重复几次。
 SELECT user,plugin FROM user;
 ```
 
-做完准备工作后**修改密码**吧`ALTER user 'root'@'localhost' IDENTIFIED BY '你想要设置的密码'`。注意密码需要有数字、英文、字符同时满足，至少8位长度，英文字符大小写都要有。如果这个操作有问题（在修改密码前，**不妨试试清空密码**`UPDATE user SET authentication_string='' WHERE user='root';`，再修改）
+做完准备工作后**修改密码**吧`ALTER user 'root'@'localhost' IDENTIFIED BY '你想要设置的密码'`。注意密码需要有数字、英文、字符同时满足，至少8位长度，英文字符大小写都要有（现在好像没有要求了）。如果这个操作有问题（在修改密码前，**不妨试试清空密码**`UPDATE user SET authentication_string='' WHERE user='root';`，再修改）
 
 别忘了`FLUSH privileges`。
 
@@ -63,15 +63,19 @@ SELECT user,plugin FROM user;
 
 ### Windows安装`MySQL`
 
-> 我windows安装还蛮累的，每次都出现Plugin 'mysql_native_password' is not loaded
->
-> 自从mysql8.0以后登录验证模式都变了，所以要改回以前的老样子mysql_native_password，但是很容易报上面的错
+下载选择community版本的完整安装包
 
-下载很有门道，如果你每次都会遇到。
+WIndows安装MySQL其实很简单，我们这里采用轻量安装。
+
+1. 选择Server Only，只安装mysql的服务端
+
+2. 路径我会选择保持默认，因为好像只有C盘的ProgramFiles和ProgramData这两个目录没有权限控制。
+
+   > 如果你要安装到其他目录建议选择别的盘。如果非要安装到C盘的其他位置话，建议用管理员身份重启mysql安装程序。因为后面他会让你输入密码，如果卡死了那就是你这里出了问题。
 
 
 
-### 恭喜你安装完MySQL，`MySQL Workbench`安装很简单的。
+### `MySQL Workbench`安装
 
 我建议如果是建模的话，使用mysql workbench会好很多。
 
@@ -84,7 +88,7 @@ SELECT user,plugin FROM user;
 
 
 
-### windows安装`SQL Server`
+### Windows安装`SQL Server`
 
 > 现在SQL Server是支持Linux了，我们在linux虽然没有ssms（sql server managagment stdio）这种GUI界面，
 >
@@ -94,7 +98,7 @@ SELECT user,plugin FROM user;
 
 
 
-### 现在的`DataGrip`已经足够好用了，可以配置主流数据库
+### `DataGrip`我觉得很好用了
 
 ##### datagrip配置mysql
 
